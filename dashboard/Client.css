@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;font-family: "Raleway", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 9px;
+
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+body {
+    background-color: #111;
+}
+section {
+    margin-top: 50px;
+}
+header {
+    background-color: #222;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 5%;
+}
+header .logo a {
+    font-size: 25px;
+    color:#1b9c9a;
+}
+header .logo a span {
+    color:#fff;
+}
+.menu{
+    display:flex;
+    align-items: center;
+}
+.menu li {
+    margin:0 15px;
+    list-style-type: none;
+}
+.menu li a {
+    color:#fff;
+    font-size:14px;
+}
+
+#home {
+    background: linear-gradient(rgba(0,0,0,0.1),#333),url("../img/image2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+#home h2 {
+    font-size: 400%;
+    color: rgb(218, 219, 226);
+    margin-bottom: 20px;
+}
+#home h4 {
+    font-size: 500%;
+    color: rgb(238, 239, 241);
+    margin-bottom: 20px;
+}
+
+.find_trip form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+.find_trip form div , .find_trip form input [type="submit"]{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.find_trip form label {
+    color: #999;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.find_trip form input {
+    padding: 5px 20px;
+    background-color: transparent;
+    border: 1px solid #41dfdc;
+    outline: 0.02;
+    width: 90%;
+    font-size: 15px;
+    color: rgb(113, 220, 247);
+}
+.find_trip form input [type="submit"]{
+    display: flex;
+    align-items:stretch;
+    text-transform: uppercase;
+    color: #1b9c9a;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 30%;
+}
+#a-propos {
+    margin-top: 90px;
+    padding: 0 6%;
+    width:100%;
+}
+.title {
+    text-transform: capitalize;
+    margin: 70px 0;
+    font-weight: bold;
+    color: #1b9c9a;
+    position: relative;
+    margin-left: 15px;
+    font-size: 18px;
+}
+.title::after {
+    position: absolute;
+    left: -15px;
+    content: "";
+    height: 100%;
+    background-color: #fff;
+    width: 5px;
+}
+.img-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.img-desc .left {
+    position: relative;
+    margin-left: 20px;
+    height: 250px;
+    width: 40%;
+}
+.img- desc .right{
+width: 57%;
+}
+.img-desc .left image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    box-shadow: 0 0 100px #1b9c9a;
+}
+.img-desc .title::after {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    content: "";
+    height: 100%;
+    background-color: #1b9c9a;
+    width: 100%;
+    z-index: -1;
+}
+.img-desc .right h3 {
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+#reservation{
+    padding:0 10%;
+    margin-bottom: 20px; 
+    color: white;
+    font-size: 20px;
+}
+#reservation form {
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#reservation form select,#reservation form
+input[type="date"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    height: 40px;
+}
+
+#reservation form button {
+ 
+   border-radius: 5px;
+   padding: 8px;
+   margin-top: 34px;
+   box-sizing: border-box;
+   outline: none;
+   width:fit-content;
+   height: 40px;
+   font-size: 20px;
+   width: 130px;
+}
+
+#popular-destination {
+    padding: 0 10%;
+    margin-bottom: 20px;
+}
+
+#popular-destination .content {
+    padding: 0 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.destination-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: 320px;
+    text-align: center;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+}
+
+.destination-details {
+    padding: 20px;
+}
+
+.destination-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.destination-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.destination-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.star-ratings {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.star { 
+    color: gold;
+}
+
+.star-black {
+    color: black;
+}
+
+.destination-price {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.reserve-button {
+    background-color: #1b9c9a;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: #0b8684;
+}
+
